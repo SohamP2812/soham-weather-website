@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Courier New", sans-serif;
+}
+
+.app {
+  background-image: url("./assets/cold-bg.jpg");
+  background-size: cover;
+  background-position: bottom;
+  transition: 0.4 ease;
+}
+
+.app.hot {
+  background-image: url("https://blog-college.ku.edu/wp-content/uploads/2016/10/giphy-downsized-large-1.gif");
+}
+
+.app.cool {
+  background-image: url("https://www.bariatriccookery.com/wp-content/uploads/2016/11/icy-cold-weather-gif.gif");
+}
+
+.app.cold {
+  background-image: url("https://data.whicdn.com/images/213002742/original.gif");
+}
+
+.app.warm {
+  background-image: url("https://media2.giphy.com/media/xUA7b4arnbo3THfzi0/giphy.gif");
+}
+
+.app.init {
+  background-image: url("https://pic.36krcnd.com/201911/08043626/pdhefvw4t52jrnvv.gif");
+}
+
+main {
+  min-height: 100vh;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.75)
+  );
+  padding-top: 25px;
+}
+
+.search-box {
+  width: 100%;
+  padding-left: 50px;
+  padding-right: 50px;
+
+  margin: 90px 0 100px;
+}
+
+.search-box .search-bar {
+  display: block;
+  width: 100%;
+  padding: 15px;
+
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 16px 16px 16px 16px;
+  margin-top: -25px;
+
+  color: #aca7a7;
+  font-size: 20px;
+
+  transition: 0.4s ease;
+}
+
+.search-box .search-bar:focus {
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.location-box .location {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 500;
+  text-align: center;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+}
+
+.location-box .date {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+  text-shadow: 2px 2px rgba(50, 50, 70, 0.5);
+}
+
+.weather-box {
+  text-align: center;
+}
+
+.weather-box .temp {
+  position: relative;
+  display: inline-block;
+  margin: 30px auto;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+
+  padding: 15px 25px;
+
+  color: #fff;
+  font-size: 102px;
+  font-weight: 100;
+
+  text-align: center;
+  box-shadow: 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.weather-box .details {
+  position: relative;
+  display: inline-block;
+  width: 100vw;
+  background-color: rgba(255, 255, 255, 0.2);
+
+  color: #fff;
+  font-size: 40px;
+  font-weight: 100;
+
+  text-align: center;
+  box-shadow: 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.weather-box .weather {
+  color: #fff;
+  font-size: 48px;
+  font-weight: 400;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+}
